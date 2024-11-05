@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_tc56AZuIEe-8cuOLktoVKw" name="customerchangedatacapture.module.JDBCConnectionResource" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_tc56ApuIEe-8cuOLktoVKw" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_tc56A5uIEe-8cuOLktoVKw">
+    <substitutionBindings xmi:id="_z72ogJuKEe-8cuOLktoVKw" template="username" propName="jdbcUsername"/>
+    <substitutionBindings xmi:id="_1ITNgJuKEe-8cuOLktoVKw" template="password" propName="jdbcPassword"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_tc56BJuIEe-8cuOLktoVKw" jdbcDriver="org.postgresql.Driver">
+      <substitutionBindings xmi:id="_2eIYAJuKEe-8cuOLktoVKw" template="dbURL" propName="jdbcUrl"/>
+    </connectionConfig>
+  </jndi:configuration>
+</jndi:namedResource>
